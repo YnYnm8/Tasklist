@@ -1,0 +1,83 @@
+body {
+  display: flex; /* bodyをFlexコンテナにする */
+  justify-content: center; /* 子要素（フォーム）を水平方向の中央に配置 */
+  align-items: center; /* 子要素（フォーム）を垂直方向の中央に配置 */
+  min-height: 100vh; /* bodyの高さをビューポートの高さに合わせる */
+  margin: 0; /* bodyのデフォルトマージンをなくす */
+  background-color: #f0f0f0; /* 背景色 */
+  font-family: sans-serif; /* フォントの指定 */
+}
+
+form {
+  padding: 30px; /* フォームの内側に余白を作る */
+  border: 1px solid #ddd; /* フォームの枠線 */
+  border-radius: 10px; /* 角を丸くする */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 影を追加 */
+  background-color: white; /* フォームの背景色 */
+
+  /* フォーム内の要素を中央揃えにするため、フォームもFlexコンテナにする */
+  display: flex;
+  flex-direction: column; /* 要素を縦に並べる */
+  align-items: center; /* フォーム内の子要素（inputやbutton）を水平方向の中央に配置 */
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-image {
+  width: 150px;         /* 好きなサイズに調整 */
+  height: 150px;
+  border-radius: 50%;   /* 丸くする場合 */
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 280px; /* 幅を広げる */
+  height: 45px; /* 高さを広げる */
+  font-size: 17px; /* 入力文字のサイズを大きくする */
+  padding: 10px 15px; /* テキストと枠の間に余白を追加して見やすくする */
+  margin-bottom: 15px; /* 入力欄同士の間に少しスペースを空ける */
+  border: 1px solid #bbb; /* 入力欄のボーダー */
+  border-radius: 5px; /* 入力欄の角を丸くする */
+  box-sizing: border-box; /* paddingとborderをwidthとheightに含める */
+}
+
+button {
+  width: 280px; /* ボタンも入力欄と同じ幅にする */
+  height: 50px; /* ボタンの高さを調整 */
+  font-size: 19px; /* ボタンの文字サイズを大きくする */
+  background-color: #007bff; /* 背景色（青） */
+  color: white; /* 文字色 */
+  border: none; /* ボーダーをなくす */
+  border-radius: 5px; /* 角を丸くする */
+  cursor: pointer; /* カーソルをポインターにする */
+  transition: background-color 0.3s ease; /* ホバー時のアニメーション */
+}
+
+button:hover {
+  background-color: #0056b3; /* ホバー時の背景色 */
+}
+body{
+    background:bisque;
+}
+.amaury {
+  display: flex;            /* ブロック表示にすることで中央揃えしやすく */
+  text-align: center;        /* 中央揃え */
+  font-size: 1.5em;          /* 文字を大きく */
+  margin-top: 120px;          /* 上との間隔 */
+  text-decoration: none;     /* 下線をなくす */
+  color: #333;               /* 文字色 */
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.amaury:hover {
+  color: #007bff;            /* ホバー時に青く */
+}
+
